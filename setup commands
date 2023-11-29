@@ -1,0 +1,30 @@
+iterm2
+https://iterm2.com/downloads.html
+
+Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Ohmyzsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+Git
+brew install git
+
+ssh
+ssh-keygen -t rsa
+
+
+rvm + ruby
+brew install gnupg
+gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+\curl -sSL https://get.rvm.io | bash
+rvm install #{RUBY_VERSION} --with-openssl-dir=$(brew --prefix)/opt/openssl@3
+gem install bundler
+
+postgres
+brew install postgresql
+brew services start postgresql@14
+
+github desktop
+https://desktop.github.com/
